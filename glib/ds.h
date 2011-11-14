@@ -1650,7 +1650,7 @@ public:
   bool operator==(const PVec<TVal>& Vec) const {return V==Vec.V;}
   bool operator<(const PVec<TVal>& Vec) const {return V<Vec.V;}
   TVal& operator[](const int& ValN) const {return V[ValN];}
-  TVal& operator[](const int& ValN) {return V[ValN];} // need a non-const accessor to modify values, right?
+  const TVal& operator[](const int& ValN) {return V[ValN];} // need a non-const accessor to modify values, right?
 
   bool Empty() const {return V.Empty();}
   int Len() const {return V.Len();}
