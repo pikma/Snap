@@ -55,6 +55,9 @@ typedef ptrdiff_t ssize_t;
 #endif
 
 typedef size_t TSize;
+#ifndef SIZE_MAX
+#define SIZE_MAX ((size_t)(-1))
+#endif
 #define TSizeMx SIZE_MAX
 
 /////////////////////////////////////////////////
